@@ -1,0 +1,11 @@
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: flex-end;
+}
+nav {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
