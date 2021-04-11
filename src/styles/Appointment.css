@@ -1,0 +1,40 @@
+.appointmentWrapper {
+  height: 550px;
+  position: relative;
+  background: url("../images/apppointmentBG.png");
+  z-index: -2;
+}
+
+.appointmentWrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #191c45;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.appointmentWrapper img {
+  height: 650px;
+  transform: translateY(-100px);
+  z-index: 1;
+}
+
+.doctorImage {
+  text-align: right !important;
+}
+
+.appontmentInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  padding-top: 4rem;
+  gap: 15px;
+}
+
+.appontmentInfo p {
+  width: 70%;
+  line-height: 1.6;
+}

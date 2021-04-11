@@ -1,0 +1,39 @@
+.blogHeader {
+  text-align: center;
+}
+
+/* Blog Card Page */
+.authorCard {
+  padding: 1.5rem;
+  transition: background-color 0.4s ease;
+  height: 375px;
+  cursor: pointer;
+  background-color: gray;
+  background: url("../images/quote.svg");
+  background-size: 150px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.authorCard:hover {
+  background-color: #1cc7c1;
+}
+
+.authorCard:hover .author-info {
+  display: none;
+}
+.author-content {
+  transition: transform 0.9s ease;
+}
+
+.authorCard:hover .author-content {
+  color: #fff;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  transition: display 0.4s ease;
+}

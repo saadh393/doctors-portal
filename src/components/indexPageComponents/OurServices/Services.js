@@ -6,15 +6,42 @@
 */
 
 /*  🔥 React Dependencies 🔥 */
-import { Container, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import cavity from '../../../images/cavity.png';
+import fluoride from '../../../images/fluoride.png';
+import teath from '../../../images/teath.png';
+import '../../../styles/OurServices.css';
+import ServiceCard from './ServiceCard';
+
+// Data
+const serviceData = [
+    {
+        image: fluoride,
+        title: 'Fluoride Treatment',
+    },
+    {
+        image: cavity,
+        title: 'Cavity Filling',
+    },
+    {
+        image: teath,
+        title: 'Teath Whitening',
+    },
+];
 
 const Services = () => (
     <>
-        <Container>
-            <Row>
-                <h1>Hello WOrld</h1>
+        <section className="ourServiesContainer text-center">
+            <strong>
+                <h4>OUR SERVICES</h4>
+            </strong>
+            <h1>Services We Provide</h1>
+            <Row className="services">
+                {serviceData.map((data) => (
+                    <ServiceCard data={data} />
+                ))}
             </Row>
-        </Container>
+        </section>
     </>
 );
 

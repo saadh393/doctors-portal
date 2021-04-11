@@ -1,0 +1,17 @@
+footer {
+  background-image: url("../images/footer-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer .container {
+  margin-top: 3.7rem;
+}
+
+footer ul {
+  margin-top: 2rem;
+  list-style: none;
+  color: gray;
+  line-height: 2.5;
+  font-weight: 500;
+}

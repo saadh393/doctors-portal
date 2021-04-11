@@ -6,16 +6,17 @@
 */
 
 /*  🔥 React Dependencies 🔥 */
-import style from '../../../styles/Navbar.module.css';
+import { Link } from 'react-router-dom';
+import style from '../../styles/Navbar.module.css';
 
 const Navbar = () => (
     <>
         <nav>
             <ul className={style.menu}>
                 <li>Home</li>
-                <li>About</li>
+                <Link to="/appointment">Appointment</Link>
                 <li>Dental Services</li>
-                <li className="text-white">Reviews</li>
+                <li>Reviews</li>
                 <li className="text-white">Blog</li>
                 <li className="text-white">Contact Us</li>
             </ul>

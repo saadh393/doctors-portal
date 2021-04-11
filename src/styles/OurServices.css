@@ -1,0 +1,25 @@
+/* Services.js */
+.ourServiesContainer {
+  margin-top: 8rem;
+}
+
+.services {
+  margin-top: 50px;
+}
+
+/* Service Card.js */
+.serviceCardItem {
+  padding: 1rem 0.8rem;
+}
+.serviceCardItem h4 {
+  margin-top: 30px;
+}
+
+.serviceCardItem p {
+  margin-top: 20px;
+  color: gray;
+}
+
+.serviceCardItem img {
+  height: 100px;
+}

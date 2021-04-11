@@ -1,12 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300&display=swap");
 
+:root {
+  --primary: "#1cc7c1";
+  --secondary: "#3a4256";
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
   color: dimgray;
+}
+
+h4 {
+  color: #1cc7c1 !important;
+}
+
+/* Sizings */
+
+.mt-6r {
+  margin-top: 6rem;
+}
+
+.mt-7r {
+  margin-top: 7rem;
+}
+
+.mt-8r {
+  margin-top: 8rem;
+}
+
+/* Button Colors */
+
+.btn-primary {
+  background-image: linear-gradient(45deg, #18d2b0, #0fcfea);
+  border: #0fd1ea00 solid;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.btn-primary:hover {
+  background-color: #0fcfea;
+  border-color: #0fcfea;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #0fcfea;
+  border-color: #0fcfea;
+}
+
+/* Text Colors */
+.text-primary {
+  color: #1cc7c1 !important;
 }

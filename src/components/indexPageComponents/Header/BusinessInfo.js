@@ -14,8 +14,7 @@ const BusinessInfo = () => {
     const infoData = [
         {
             title: 'Opening Hours',
-            description:
-                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eos!',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing!',
             icon: faClock,
             background: 'light',
         },
@@ -27,8 +26,7 @@ const BusinessInfo = () => {
         },
         {
             title: 'Contact Us Now',
-            description:
-                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eos!',
+            description: '+911122214',
             icon: faPhoneAlt,
             background: 'light',
         },

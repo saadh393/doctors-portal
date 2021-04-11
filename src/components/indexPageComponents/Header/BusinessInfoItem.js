@@ -13,11 +13,11 @@ import '../../../styles/BusinessInfoItem.css';
 const BusinessInfoItem = ({ infoData }) => (
     <>
         <Col md={4}>
-            <div className={`d-flex text-white background-${infoData.background} infoWrapper`}>
+            <div className={`d-flex  text-white background-${infoData.background} infoWrapper`}>
                 <FontAwesomeIcon icon={infoData.icon} size="3x" color="white" />
                 <div style={{ color: '#fff' }}>
-                    <h3>{infoData.title}</h3>
-                    <p>{infoData.description}</p>
+                    <h6>{infoData.title}</h6>
+                    <small>{infoData.description}</small>
                 </div>
             </div>
         </Col>

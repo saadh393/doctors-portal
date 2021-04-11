@@ -1,0 +1,25 @@
+.contactWrapper {
+  height: 650px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  position: relative;
+  z-index: 0;
+  background: url("../images/apppointmentBG.png");
+}
+
+.contactWrapper::after {
+  content: "";
+  position: absolute;
+  background-color: #0a0b1d;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  z-index: -2;
+}
+
+.contact-h1 {
+  color: #fff;
+  font-size: 3rem;
+}

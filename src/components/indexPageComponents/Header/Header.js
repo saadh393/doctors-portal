@@ -10,7 +10,7 @@ import { Container } from 'react-bootstrap';
 import '../../../styles/Header.module.css';
 import BusinessInfo from './BusinessInfo';
 import MainHeader from './MainHeader';
-import Navbar from './Navbar';
+import Navbar from '../../SharedComponents/Navbar';
 
 const Header = () => (
     <>

@@ -1,0 +1,30 @@
+.testimonial-cards {
+  gap: 5px;
+}
+
+/* TestimonialCard.js */
+.testimonial-card-item {
+  padding: 1.4rem;
+  /* width: 80%; */
+}
+
+.testimonial-card-item p {
+  line-height: 1.7;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.testimonial-userinfo {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.testimonial-userinfo p {
+  margin: 0;
+  margin-top: 4px;
+}
+
+.testimonial-userinfo img {
+  padding: 1rem;
+}
