@@ -11,7 +11,7 @@ import ModalAppointment from '../ModalAppointment/ModalAppointment';
 
 /*  🔥 React Dependencies 🔥 */
 
-const CardBookAppoi = ({ data }) => {
+const CardBookAppoi = ({ data, date }) => {
     const [modalIsOpen, setIsOpen] = useState(false);
     function openModal() {
         setIsOpen(true);
@@ -20,6 +20,7 @@ const CardBookAppoi = ({ data }) => {
     function closeModal() {
         setIsOpen(false);
     }
+
     return (
         <>
             <Col md={4}>
@@ -36,6 +37,7 @@ const CardBookAppoi = ({ data }) => {
                             openModal={openModal}
                             closeModal={closeModal}
                             modalIsOpen={modalIsOpen}
+                            date={date}
                         />
                     </div>
                 </Card>

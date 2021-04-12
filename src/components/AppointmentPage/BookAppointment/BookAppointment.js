@@ -57,7 +57,7 @@ const BookAppointment = ({ value }) => {
                 </h1>
                 <Row className="mb-3">
                     {data.map((appointment) => (
-                        <CardBookAppoi data={appointment} />
+                        <CardBookAppoi data={appointment} date={value} />
                     ))}
                 </Row>
             </section>

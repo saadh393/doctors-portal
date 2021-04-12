@@ -10,6 +10,7 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 import { useForm } from 'react-hook-form';
 import '../../../styles/AppointmentModal.css';
+import axios from 'axios';
 
 const customStyles = {
     content: {
@@ -24,16 +25,29 @@ const customStyles = {
 };
 
 Modal.setAppElement('#root');
-const ModalAppointment = ({ closeModal, openModal, modalIsOpen, title }) => {
+const ModalAppointment = ({ closeModal, openModal, modalIsOpen, title, date }) => {
     const {
         register,
         handleSubmit,
         watch,
         formState: { errors },
     } = useForm();
+    const [status, setStatus] = useState('');
     const onSubmit = (data) => {
-        console.log(data);
-        closeModal();
+        setStatus('Please Wait...');
+        axios
+            .post('http://localhost:4000/appointment', data)
+            .then((response) => {
+                if (response.data) {
+                    setStatus('Your Appointment Data Stored Successfully');
+                    setTimeout(() => {
+                        closeModal();
+                    }, 2000);
+                } else {
+                    setStatus('There was a server side error');
+                }
+            })
+            .catch((error) => console.log(error));
     };
 
     return (
@@ -45,6 +59,7 @@ const ModalAppointment = ({ closeModal, openModal, modalIsOpen, title }) => {
                 contentLabel="Example Modal"
             >
                 <h3 className="text-primary text-center my-3">{title}</h3>
+                <p className="text-center">On {date.toDateString()}</p>
 
                 <form onSubmit={handleSubmit(onSubmit)} className="modal-form">
                     <label>Dcotor Name </label>
@@ -68,7 +83,7 @@ const ModalAppointment = ({ closeModal, openModal, modalIsOpen, title }) => {
                     {errors.email && <span>Invalid Email</span>}
                     <br />
                     <label>PHone </label>
-                    <input type="phone" {...register('age', { min: 18, max: 99 })} />
+                    <input type="phone" {...register('phone')} />
                     <br />
                     <div className="d-flex my-2">
                         <div className="mr-5">
@@ -87,7 +102,9 @@ const ModalAppointment = ({ closeModal, openModal, modalIsOpen, title }) => {
                             />
                         </div>
                     </div>
+                    <input type="hidden" {...register('date')} value={date.toDateString()} />
                     <input type="submit" className="btn-primary" />
+                    <span>{status}</span>
                 </form>
             </Modal>
         </div>

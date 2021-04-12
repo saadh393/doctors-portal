@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/indexPageComponents/Home';
 import './styles/global.css';
 import Appointment from './components/AppointmentPage/Appointment';
+import LoginPage from './components/LoginPage/LoginPage';
 
 function App() {
     return (
@@ -13,6 +14,9 @@ function App() {
                 </Route>
                 <Route path="/appointment">
                     <Appointment />
+                </Route>
+                <Route path="/login">
+                    <LoginPage />
                 </Route>
             </Switch>
         </Router>

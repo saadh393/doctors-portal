@@ -61,6 +61,11 @@ h4 {
   border-color: #0fcfea;
 }
 
+
+.btn-primary:disabled{
+  border-color: #0000;
+  background-color: gray;
+}
 /* Text Colors */
 .text-primary {
   color: #1cc7c1 !important;
