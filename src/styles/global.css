@@ -65,3 +65,15 @@ h4 {
 .text-primary {
   color: #1cc7c1 !important;
 }
+
+@media only all and (max-width: 1200px) {
+  .ReactModal__Content {
+    width: 50%  !important;
+  }
+}
+
+@media only all and (max-width: 600px) {
+  .ReactModal__Content {
+    width: 75% !important;
+  }
+}

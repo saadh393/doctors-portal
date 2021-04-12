@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Blog from './components/indexPageComponents/Blog/Blog';
+import Header from './components/indexPageComponents/Header/Header';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 

@@ -1,0 +1,16 @@
+.modal-form{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.modal-form input, .modal-form select {
+    width: 100%;
+    padding: .6rem .7rem;
+    outline: gray;
+}
+
+.modal-form label{
+    margin-top: 5px;
+}
+

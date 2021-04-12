@@ -3,7 +3,8 @@
   "workbench.colorTheme": "Learn with Sumit Theme",
 
   // config related to code formatting
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "null",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.formatOnSave": false,
